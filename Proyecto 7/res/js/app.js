@@ -17,7 +17,7 @@ let arry = [x, y, ara, b, "b", false, 'd', "holaaaaa"];
 
 let op = Math.PI;
 
-console.log("(" + x + " * " + y + ") / " + PI + " = " + ((x * y) / PI))
+console.log("(" + x + " * " + y + ") / " + PI + " = " + ((x * y) / PI));
 console.log(ara + b + "b");
 console.log(ara + !b + "b");
 console.log(arry[0]);
