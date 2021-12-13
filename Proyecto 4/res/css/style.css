@@ -1,0 +1,80 @@
+body{
+    line-height: 1.5em;
+}
+
+header{
+    text-align: center;
+}
+
+header img{
+    width: 23%;
+    height: 23%;
+}
+
+nav{
+    align-items: left;
+}
+
+nav li{
+    padding-left: 20px;
+}
+
+nav li, footer li{
+    list-style: none; /* Quitamos el estilo de la lista */
+    display: inline-block; /* Agrupamos los elementos de la lista en una sola linea */
+}
+
+section{
+    display: flex; /* Desanidamos el Section */
+    justify-content: center; /* centramos verticalmente el Section */
+}
+
+footer{
+    text-align: center; /* alineamos el contenido al centro de la cabezera, el pie de página y el menú de navegación */
+}
+
+.cabz{
+    width: 80%;
+    align-content: center;
+    margin-left: 10%;
+    font-family: Barlow;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.catwo{
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+}
+
+.micen{
+    margin-left: 5%;
+}
+
+.micen span{
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+}
+
+.gavy{
+    margin-left: 5%;
+}
+
+.gavy span{
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+}
+
+.inse{
+    margin-left: 5%;
+}
+
+.inse span{
+    display: inline-block;
+    padding: 0px 0px 0px 10px;
+}
+
+.svg{
+    width: 10%;
+}

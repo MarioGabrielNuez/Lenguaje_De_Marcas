@@ -1,0 +1,29 @@
+<!-- Trabajo de Lenguaje de marcas - Mario Gabriel Núñez Alcázar de velasco-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Cabecera -->
+    </head>
+    <body>
+        <!-- Cuerpo -->
+        <p><strong><u><em>Así funciona el teorema de Gödel</em></u><sub>(1)</sub></strong></p>
+        <hr>
+        <p>Los teoremas de incompletitud de Kurt Gödel acabaron con la búsqueda de una teoría matemática del todo. Noventa años después, seguimos tratando de entender sus consecuencias.</p>
+        <br>
+        <p>En  1931, el lógico austriaco Kurt Gödel llevó a cabo el que probablemente podamos calificar como uno de los logros intelectuales más asombrosos de la historia. Por aquel entonces, los matemáticos se habían lanzado a buscar los fundamentos de su disciplina: un conjunto de hechos matemáticos básicos, o axiomas, que fueran al mismo tiempo coherentes (que nunca condujeran a contradicciones) y completos (es decir, a partir de los cuales pudieran construirse todas las verdades matemáticas).</p>
+        <p>Sus teoremas de incompletitud, publicados cuando contaba solo 25 años, frustraron ese sueño. Gödel demostró que cualquier conjunto de axiomas que podamos postular como base de las matemáticas será irremediablemente incompleto: siempre habrá hechos verdaderos sobre los números que jamás podremos demostrar a partir de esos axiomas. Además, Gödel también probó que ninguno de esos conjuntos de axiomas podría demostrar jamás su propia coherencia.</p>
+        <p>Los teoremas de incompletitud implican que no puede existir una teoría matemática del todo; ninguna unificación de lo que es demostrable y lo que es cierto. Lo que los matemáticos puedan demostrar dependerá siempre de los supuestos de los que partan, no de una verdad fundamental a partir de la cual emanen todas las respuestas.</p>
+        <p>En los noventa años transcurridos desde el hallazgo de Gödel, los matemáticos se han topado con el tipo de preguntas sin respuesta que pronosticaban sus teoremas de incompletitud. Por ejemplo, el propio Gödel contribuyó a establecer que la <strong><u>hipótesis del continuo</u></strong> relativa a los tamaños del infinito, era indecidible. Lo mismo ocurre con el problema de la parada, o la pregunta de si un programa informático que recibe una entrada aleatoria continuará calculando para siempre o acabará deteniéndose antes o después.</p>
+        <p>Las cuestiones indecidibles han aparecido <strong><u>incluso en física</u></strong>, lo que parece indicar que la incompletitud de Gödel no solo se circunscribe al mundo de las matemáticas puras, sino que, de algún modo que no acabamos de entender, afectaría también a la propia realidad. Lo que sigue es un resumen simplificado e informal de los argumentos que empleó Gödel para demostrar sus teoremas.</p>
+        <br>
+        <hr>
+        <p><strong><u><em><small>La numeración de Gödel</small></em></u></strong></p>
+        <p>La estrategia clave de Gödel fue encontrar una manera para expresar las afirmaciones <em>sobre</em> un sistema de axiomas en términos de las afirmaciones <em>contenidas</em> en dicho sistema; esto es, en términos de afirmaciones relativas a los números. Esta correspondencia permite que un sistema de axiomas «hable» sobre sí mismo. Para ello, el primer paso consiste en asignar un número único, denominado «número de Gödel», a cualquier posible enunciado o serie de enunciados matemáticos.</p>
+        <p>En 1958, Ernest Nagel y James Newman presentaron una versión ligeramente modificada de dicho esquema en su libro <em>El teorema de Gödel</em>. Esta comienza con 12 símbolos elementales que sirven como vocabulario para expresar un conjunto de axiomas básicos. Por ejemplo, la afirmación de que algo existe puede expresarse mediante el símbolo <var>$</var>, mientras que la suma se denota mediante <var>+</var>. Un símbolo importante es <em><var>s</var></em>, que significa «sucesor de» y ofrece una manera de especificar los números: <mark><var><em>ss</em>0</var></mark> por ejemplo, hace referencia al número 2. A estos 12 símbolos se les asignan los números de Gödel del 1 al 12.</p>
+        <p>A continuación, las letras que representan variables, como <em><var>X</var></em>, <em><var>Y</var></em> o <em><var>Z</var></em> se asocian a los números primos mayores que 12 (13, 17, 19, etcétera). A partir de aquí, es posible asignar un número de Gödel propio a cualquier combinación de símbolos y variables; es decir, a toda fórmula o secuencia de fórmulas aritméticas que podamos construir.</p>
+        <p>Para verlo, consideremos la fórmula <var>0=0</var>. Los tres símbolos que aparecen en ella tienen asociados los números de Gödel 6, 5 y 6, respectivamente. Ahora hemos de convertir esta secuencia de tres números en uno solo. Este deberá además ser único, en el sentido de que ninguna otra secuencia de símbolos pueda generarlo. Para ello, tomamos los tres primeros números primos (2, 3 y 5), elevamos cada uno de ellos al número de Gödel del símbolo que ocupa la misma posición en la secuencia, y por último los multiplicamos. De esta manera, <var>0=0</var> se convierte en <mark><var>2<sup>6</sup> × 3<sup>5</sup> × 5<sup>6</sup></var></mark>, o 243.000.000.</p>
+        <br>
+        <hr>
+        <p><strong><sub>(1)</sub></strong>puedes leer el articulo entero en <strong><u>https://www.investigacionyciencia.es/revistas/investigacion-y-ciencia/hongos-la-nueva-amenaza-839/as-funciona-el-teorema-de-gdel-20136</u></strong></p>
+    </body>
+</html>

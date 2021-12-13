@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- Determina el tipo de lenguaje de etiquetas a utilizar -->
+<html lang="en"> <!-- Etiqueta de apertura de archivo HTML, lo iniciamos con lang="en"-->
+<!-- Cabecera de la página, contiene datos sobre la página para que esta funcione correctamente, esta no se visualizara-->
+    <head>
+        <meta charset="UTF-8"> <!-- especificamos el tipo de codificación a usar en toda la página -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- especificamos los navegadores compatibles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- indicamos que la página tendra la resolución de la pantalla en la que se está visualizando en el momento -->
+        <meta name="author" content="Mario Gabriel Núñez Alcázar de Velasco"> <!-- Nombre del autor de la página -->
+        <title>La Razón</title> <!-- Título de la página (se visualizara en la pestaña del navegador) -->
+        <link rel="stylesheet" type="text/css" href="./res/css/style.css">  <!-- Cargamos la hoja de estilos generica para la página -->
+    </head>
+    <!-- Contenido de la página -->
+    <body>
+        <!-- Cabecera visible de la página, contiene información relevanvte sobre la página -->
+        <header>
+            <!-- Logotipo -->
+            <img src="./res/img/png/logo.png">
+        </header>
+        <!-- Menú de navegación de la página -->
+        <nav>
+            <ul>
+                <li>Actualidad</li>
+            </ul>
+            <ul>
+                <li><a href="#">Lotería</a></li>
+                <li>Economía</li>
+                <li>Toros</li>
+                <li>Tecnología</li>
+                <li>Ciencia</li>
+            </ul>
+        </nav>
+        <!-- div para aplicar el flexbox al article y el aside -->
+        <div class="flexbox">
+            <!-- Contenido principal -->
+            <article class="flexbox-article">
+                <!-- Seccion dentro del contenido principal -->
+                <section>
+                    <p><strong>La importancia del diseño web para captar clientes</strong></p>
+                    <p>Consejos para lograr el éxito de nuestra web o app a través de la apariencia, el contenido y la usabilidad</p>
+                    <img src="res/img/imagen.jpeg" alt="Asistentes al taller TOP iniciativas">
+                    <sub>CREADA.28-04-2015 | 16:40 H /</sub>
+                    <sub><u>ÚLTIMA ACTUALIZACIÓN.28-04-2015 | 16:40 H</u></sub>
+                    <p><b>Apostar</b> por un buen diseño, es una parte esencial, además de rentable, en el desarrollo de nuestro proyecto. Por ello, TOP Iniciativas nos </p>
+                    <p>propone un taller basado en la iniciación al diseño de aplicaciones para captar nuevos clientes potenciales. El objetivo es poder analizar</p>
+                    <p>las características de diseño de nuestra página web o app necesarias para mejorar la experiencia del usuario y para que nuestro producto </p>
+                    <p>pueda llegar de la mejor manera posible.</p>
+                    <br>
+                    <p>La primera impresión siempre cuenta</p>
+                    <br>
+                    <p>Toda empresa busca retener la atención del posible cliente potencial que navega por primera vez por su web o app. De todo es sabido</p>
+                    <p>que el diseño gráfico ha adquirido gran importancia en la forma de generar interés en los clientes y juega un papel muy importante en</p>
+                    <p>ésta tarea. Si el usuario no cuenta con una buena primera impresión, seguramente termine abandonando nuestra página.</p>
+                    <p>Actualmente, existen una serie de tendencias que ayudan a generar más oportunidades de negocio, pero no todas son aptas para</p>
+                </section>
+            </article>
+            <!-- Barra lateral -->
+            <aside>
+                <p>MÁS LEÍDAS</p>
+                <ul>
+                    <li><p>Sociedad</p>el lugar mas frio del</li>
+                    <li>Historia</li>
+                    <li>Gente</li>
+                    <li>España</li>
+                    <li>F-1</li>
+                </ul>
+            </aside>
+        </div>
+        <!-- Pie de página -->
+        <footer>
+            <img src="res/img/ultima pagina.jpg">
+        </footer>
+    </body>
+</html>

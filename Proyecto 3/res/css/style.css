@@ -1,0 +1,17 @@
+body{
+    background-color: azure; /*cambiamos color al fondo*/
+}
+
+nav, footer, header{
+    text-align: center; /* alineamos el contenido al centro de la cabezera, el pie de página y el menú de navegación */
+}
+
+nav li, footer li{
+    list-style: none; /* Quitamos el estilo de la lista */
+    display: inline-block; /* Agrupamos los elementos de la lista en una sola linea */
+}
+
+section{
+    display: flex; /* Desanidamos el Section */
+    justify-content: center; /* centramos verticalmente el Section */
+}

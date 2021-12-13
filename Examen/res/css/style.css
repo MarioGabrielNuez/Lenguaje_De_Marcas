@@ -1,0 +1,47 @@
+/****************** RESPONSIVE **********************/
+/* Modifica el estilo ciando el tamaño de pantalla es inferior a 376 pixeles*/
+@media screen and (max-width: 376px) {
+    /*aplicamos este estilo sobre todos los parrafos de la página*/
+    * p{
+        font-size: 40%; /* cambiamos el tamaño del texto al 40% con respecto al tamaño de la pantalla*/
+    }
+
+    /* estilo aplicado sobre aside */
+    aside{
+        display: none; /*ocultamos el elemento*/
+    }
+}
+
+/********************* RESTO DE ESTILO ***************/
+
+/* dividimos el aside y el section en dos columnas*/
+.flexbox{
+    display: flex;
+    width: 100%;
+}
+
+.flexbox-article{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+/* fin de dividimos el aside y el section en dos columnas*/
+
+/* quitamos subrañllado cuando el raton pasa por encima */
+a:hover{
+    text-decoration: none;
+}
+
+/* aumentamos el tamaño de las li de las listas en el aside*/
+aside > ul > li{
+    font-size: 4vh;
+}
+
+/* ponemos el nav en una sola linea */
+nav ul li{
+    list-style: none; /* quitamos el estilo por defecto a la lista */
+    display: inline-flex; /* hacemos que el contenido de la lista se despliegue de forma horizontal*/
+    padding-left: 5vw; /* añadimos un padding desde la izquierda de 50 pixeles*/
+    font-weight: bold; /* hacemos que el texto se muestre con negrita */
+}
