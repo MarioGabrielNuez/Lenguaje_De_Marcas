@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input" onkeyup="validarInput();" type="text">
+    <div id="mensaje"></div>
+    <select name="selec" id="select" onchange="cambiar();">
+        <option value="1">Opcion 1</option>
+        <option value="2">Opcion 2</option>
+        <option value="3">Opcion 3</option>
+    </select>
+    <div id="mensajesel"></div>
+    <button onclick="validar();">button</button>
+    <div id="divColor" onmouseover="subetamano();" onmouseout="bajatamano()" style="width: 50px; height: 50px; background-color: pink;"></div></div>
+    <div id="divimg"></div>
+    <div onscroll="scroll1();" style="width: 100px;height: 100px;overflow: scroll;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sint magni doloremque odit ipsam sit, sapiente libero. Expedita dolorem doloremque provident quia non inventore aspernatur! Ullam ipsum omnis quis explicabo?</div>
+    <p id="contador"></p>
+</body>
+<script>
+    /**
+     * Eventos en JS:
+     *  - onclick -> se activa al hacer click
+     *  - onkeyup -> se activa al escribir con el teclado
+     *  - onchange -> se activa al cambiar la seleccion de un elemento
+     *  - onmouseover -> se activa cuando el cursor esta encima de un elemento
+     *  - onmouseout -> se activa cuando el cursor sale de un elemento
+     *  - onscroll -> se activa al hacer scroll
+     */
+
+    function validar(){
+        let a = document.getElementById('input');
+        let valor = a.value;
+
+        if (valor == ''){
+            
+            document.getElementById('mensaje').innerHTML = `
+                <span>Error: el dato no puede estar vacío</span>
+            `;
+            
+            document.getElementsByTagName('span')[0].style.color = 'red';
+        } else {
+            if (valor.length < 8){
+                document.getElementById('mensaje').innerHTML = `
+                    <span>Error: el mensaje debe tener minimo 8 caractéres</span>
+                `;
+                
+                document.getElementsByTagName('span')[0].style.color = 'red';
+            } else {
+                document.getElementById('mensaje').innerHTML = ``;
+            }
+        }
+    }
+    function validarInput(){
+        let a = document.getElementById('input');
+        let valor = a.value;
+
+        if (valor == ''){
+            a.style.borderColor = 'red';
+        } else {
+            a.style.borderColor = 'black';
+        }
+
+        if (valor.length < 8){
+            document.getElementById('mensaje').innerHTML = `
+                <span>Error: el mensaje debe tener minimo 8 caractéres</span>
+            `;
+            a.style.borderColor = 'red';
+            document.getElementsByTagName('span')[0].style.color = 'red';
+        } else {
+            document.getElementById('mensaje').innerHTML = ``;
+            a.style.borderColor = 'black';
+        }
+    }
+    
+    function cambiar(){
+        let c = document.getElementById('select').value;
+        document.getElementById('mensajesel').innerHTML = c;
+    }
+
+    function subetamano(){
+        document.getElementById('divimg').innerHTML = '<img src="holo.jpg">';
+    }
+
+    function bajatamano(){
+        document.getElementById('divimg').innerHTML = '';
+    }
+
+    var contador = 0;
+    function scroll1(){
+        contador += 1
+        document.getElementById('contador').innerHTML = contador;
+    }
+
+</script>
+</html>
