@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<direcciones>
+    <dir id="1">
+        <ciudad>Madrid</ciudad>
+        <codigoPostal>28004</codigoPostal>
+        <calle>c:\\menganito</calle>
+    </dir>
+    <dir id="2">
+        <ciudad>guadalaja</ciudad>
+        <codigoPostal>19004</codigoPostal>
+        <calle>c:\\briANDA DE MENDOZA</calle>
+    </dir>
+    <dir id="3">
+        <ciudad>guadalajara</ciudad>
+        <codigoPostal>19005</codigoPostal>
+        <calle>c:\\xaragoza</calle>
+    </dir>
+</direcciones>
