@@ -1,0 +1,51 @@
+<!DOCTYPE html> <!-- Determina el tipo de lenguaje de etiquetas a utilizar -->
+<html lang="es"> <!-- Etiqueta de apertura de archivo HTML, lo iniciamos con lang="en"-->
+
+    <!-- Cabecera de la página, contiene datos sobre la página para que esta funcione correctamente, esta no se visualizara-->
+    <head>
+        <meta charset="UTF-8"> <!-- especificamos el tipo de codificación a usar en toda la página -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- especificamos los navegadores compatibles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- indicamos que la página tendra la resolución de la pantalla en la que se está visualizando en el momento -->
+        <meta name="author" content="Mario Gabriel Núñez Alcázar de Velasco"> <!-- Nombre del autor de la página -->
+        <title>DAM</title> <!-- Título de la página (se visualizara en la pestaña del navegador) -->
+        <link rel="shortcut icon" type="image/icon" href="res/img/ico/logo.ico"> <!-- Cargamos el icono de la página -->
+        <link rel="stylesheet" href="./res/css/style.css">  <!-- mi CSS -->
+
+        <!-- Boostrap (clases para Complementar a Materialize) -->
+        <link rel="stylesheet" href="./res/css/bootstrap.css">
+        <!-- Fin Boostrap (clases para Complementar a Materialize) -->
+        
+        <!-- MATERIALIZE -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> <!-- Compiled and minified CSS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> <!-- Compiled and minified JavaScript -->
+        <!-- FIN MATERIALIZE -->
+    </head>
+
+    <!-- Contenido de la página -->
+    <body>
+        <div class="header">
+            <!-- Cabecera visible de la página, contiene información relevante sobre la página -->
+            <header></header>
+            <nav>
+                <div class="nav-wrapper grey darken-4">
+                    <img class="p-0_55 w-25 h-mc" src="./res/img/png/logo.png" alt="DAM BOCM">
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="https://www.comunidad.madrid/sites/default/files/doc/educacion/fp/FP-Ensenanza-IFCS02-LOE-Ficha.pdf">BOCM</a></li>
+                        <li><a href="https://www.boe.es/boe/dias/2010/05/20/pdfs/BOE-A-2010-8067.pdf">BOE</a></li>
+                        <li><a href="https://www.ifp.es/fp-madrid/desarrollo-de-aplicaciones-multiplataforma">IFP</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+            <div class="container-90 pt-1">
+                <article class="row">
+                    <!-- Contenido de la página (Aqui se mostrarán los datos extraidos del XML de forma estructurada)-->
+                </article>
+            </div>
+        <!-- Pie de página -->
+        <footer class="text-center">
+            <p>© BOCM DAM List | 2021</p>
+        </footer>
+    </body>
+    <script src="./src/js/XML_Import.js"></script> <!-- Importación XML y resto de funciones JavaScript -->
+</html>

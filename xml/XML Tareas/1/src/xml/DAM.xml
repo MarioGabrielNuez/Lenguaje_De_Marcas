@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dam nombre="Desarrollo de aplicaciones multiplataforma">
+    <cursos>
+        <primero nombre="Contenidos del primer curso">
+            <modulos>
+                <BBDD id="1" nombre="Bases de datos (BDD)" contenido="Lenguajes SQL;Bases de datos objeto/relacionales;PHP" />
+                <ED id="2" nombre="Entornos de desarrollo (EED)" contenido="Metodología de desarrollo;Gestion de proyectos;Gestion del Software;Desarrollo de Software;Diseño de Software;Creación de doucmentación" />
+                <FOL id="3" nombre="Formación y orientación laboral (FOL)" contenido="Inciciacion al mundo laboral;Derechos y obligaciones de los trabajosdes;Prevencion de riesgos laborales;Gestión de los trabajadores en una empresa;Administracion en general" />
+                <LM id="4" nombre="Lenguajes de marcas y sistemas de gestión de información (LLMSSGI)" contenido="HTML;Java Script (JS);XML;Modelo de objetos del documetno (DOM);Frameworks y librerias de programacion WEB;Sistemas de gestion de informacion Empresarial;Programacion WEB" />
+                <P id="5" nombre="Programación (P)" contenido="Programación estructurada;Diseño modular;Gestión de ficheros;Programacion orientada a objetos (POO);Conexión y manipulación de BDD con Lenguaje Estructurado;Programación adaptativa;Uso de API, Frameworks y librerias externas;Uso de la documentación" />
+                <SI id="6" nombre="Sistemas Informaticos (SSI)" contenido="Instalación, configuración y explotación de los SSI;Gestión de la información y de recursos en una red;Implantación de software específico" />
+            </modulos>
+        </primero>
+        <segundo nombre="Contenidos del segundo curso">
+            <modulos>
+                <AC id="1" nombre="Acceso a datos (AC)" contenido="Persistencia en ficheros;Persistencia en BDR-BDOR-BDOO;Persistencia en BD nativas XML;Componentes de acceso a datos" />
+                <DI id="2" nombre="Desarrollo de interfaces (DI)" contenido="Diseño e implementación de interfaces;Preparación y distribución de aplicaciones" />
+                <EIE id="3" nombre="Empresa e iniciativa emprendedora (EIE)" contenido="Gestión y administración de Empresas;Creación de Empresas;Gestión Administrativa como Autónomo;Iniciativa emprendedora" />
+                <I id="4" nombre="Inglés (I)" contenido="Inglés técnico para grado superior" />
+                <PSP id="5" nombre="Programación de servicios y procesos (PSP)" contenido="Seguridad y criptografía;Procesos e hilos;Zócalos y servicios" />
+                <PMDM id="6" nombre="Programación multimedia y dispositivos móviles (PMDM)" contenido="Desarrollo de aplicaciones para dispositivos móviles;Programación multimedia;Desarrollo de juegos para dispositivos móviles" />
+                <SGE id="7" nombre="Sistemas de gestión empresarial (SGE)" contenido="Sistemas ERP-CRM. Implantación;Sistemas ERP-CRM. Explotación y adecuación" />
+                <TFG-PDAM id="8" nombre="Proyecto de desarrollo de aplicaciones multiplataforma (TFG-PDAM)" contenido="Trabajo de fin de grado" />
+                <FCT id="9" nombre="Formación en centros de trabajo (FCT)" contenido="Prácticas del ciclo" />
+            </modulos>
+        </segundo>
+    </cursos>
+</dam>
+
+<!-- Estructura del documento (pongo los comentarios del documeto al final ya que, al identificarlos AJAX como elementos del documento, interfieren con la lectura del mismo)-->
+<!-- Etiqueta declarativa del documento XML -->
+<!-- Etiqueta raiz, en este caso hace referencia al ciclo DAM -->
+    <!-- Etiqueta contenedora de los cursos de DAM -->
+        <!-- Etiqueta contenedora de los contenidos del primer curso de DAM -->
+            <!-- Etiqueta contenedora de los modulos del primer curso de DAM -->
+                <!-- Etiqueta declarativa del modulo BBDD de DAM -->
+                <!-- Etiqueta declarativa del modulo ED de DAM -->
+                <!-- Etiqueta declarativa del modulo FOL de DAM -->
+                <!-- Etiqueta declarativa del modulo LM de DAM -->
+                <!-- Etiqueta declarativa del modulo de Programación de DAM -->
+                <!-- Etiqueta declarativa del modulo de SI de DAM -->
+            <!-- Cierre de modulos -->
+        <!-- cierre del primer curso -->
+        <!-- Etiqueta contenedora de los contenidos del segundo curso de DAM -->
+            <!-- Etiqueta contenedora de los modulos del segundo curso de DAM -->
+                <!-- Etiqueta declarativa del modulo AC de DAM -->
+                <!-- Etiqueta declarativa del modulo DI de DAM -->
+                <!-- Etiqueta declarativa del modulo EIE de DAM -->
+                <!-- Etiqueta declarativa del modulo de inglés de DAM -->
+                <!-- Etiqueta declarativa del modulo PSP de DAM -->
+                <!-- Etiqueta declarativa del modulo PMDM de DAM -->
+                <!-- Etiqueta declarativa del modulo SGE de DAM -->
+                <!-- Etiqueta declarativa del modulo correspondiente al TFG de DAM -->
+                <!-- Etiqueta declarativa del modulo correspondiente a las FCT de DAM -->
+            <!-- Cierre de modulos -->
+        <!-- cierre del segundo curso -->
+    <!-- cierre de los cursos -->
+<!-- cierre de la etiqueta raiz -->

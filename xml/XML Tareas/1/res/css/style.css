@@ -1,0 +1,43 @@
+/*
+ * Color de fondo gris oscuro
+ */
+body {
+    background-color: darkgrey;
+}
+
+/*
+ * Altura de elemento al Máximo del contenido
+ */
+.h-mc {
+    height: max-content !important;
+}
+
+/*
+ * Padding Top a 0.55rem
+ */
+.p-0_55 {
+    padding-top: 0.55rem !important;
+}
+
+/*
+ * Padding Top a 2rem
+ */
+.p-2_rem {
+    padding-top: 2rem !important;
+}
+
+/*
+ * la clase container con el ancho al 70% no me convencía, asique he creado la misa propia con el ancho al 90% del 
+ * tamaño de la página
+ */
+.container-90 {
+    width: 90%;
+    margin: auto;
+}
+
+/* 
+ * Centrado de texto
+ */
+.text-center {
+    text-align: center;
+}

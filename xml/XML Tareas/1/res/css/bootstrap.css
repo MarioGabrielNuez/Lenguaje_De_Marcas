@@ -1,0 +1,22 @@
+/* Añadimos las clases de bootstrap que hacen falta y, las cuales, no tienen equivalente en materialize 
+ * (o bien no me ha convencido su resultado o su aplicación)
+ */
+ .w-25 {
+    width: 25% !important;
+ }
+
+.pt-1 {
+   padding-top: 0.25rem !important;
+}
+
+.ps-5 {
+   padding-left: 3rem !important;
+}
+
+.pb-2 {
+   padding-bottom: 0.5rem !important;
+}
+
+.mb-2 {
+   margin-bottom: 0.5rem !important;
+}
