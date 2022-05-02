@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE BDusuarios SYSTEM "validacion.dtd">
+<BDusuarios>
+    <usuario clave="****" dni="********">
+        <nombre>Sergio</nombre>
+        <email>usersergio@user.com &fecha;</email>
+        <fechaNac></fechaNac>
+    </usuario>
+    <usuario clave="****" dni="********">
+        <nombre>Antonio</nombre>
+        <email>userantonio@user.com</email>
+        <fechaNac></fechaNac>
+    </usuario>
+</BDusuarios>

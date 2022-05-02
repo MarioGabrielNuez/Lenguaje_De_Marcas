@@ -1,0 +1,42 @@
+En esta practica el objetivo es realizar una validacion XSD de un archivo XML. 
+Consta de dos partes:
+
+- Parte 1: fichero modulos.xml.
+    Rellenar el contenido del fichero con los siguientes elementos:
+    a) autor: corresponde al autor/a de la práctica. Elementos: nombre, apellidos y correo.
+    b) modulos: correspondiente a los modulos del ciclo correspondiente.
+        Se deben rellenar tantas etiquetas modulo como aquellos existentes en primero y segundo.
+    c) profesores: correspondiente a los profesores que imparten materias en el ciclo.
+        Se deben poner tantas etiquetas materia como las que imparte dicho/a profesor/a.
+  
+- Partes 2. fichero validacion.xsd.
+    Realizar las validaciones de los elementos y atributos correspondientes del fichero modulos.xml
+    en el fichero validacion.xsd
+
+Se valora:
+- xml correcto, completo y sin modificar estructura.
+- Asociacion correcta xml-xsd
+- Elementos simples correctamente identificados e implementadas.
+- Atributos correctamente identificados e implementados.
+- Elementos complejos correctamente identificados e implementados.
+- Restricciones correctamente identificadas e implementados.
+- Tipos simples correctamente identificados e implementados
+
+Entrega:
+La entrega estará abierta durante 10 dias. Después NO se recogen ejercicios.
+
+Calificaciones:
+Las calificaciones máximas posibles variarán en función de la fecha de entrega, premiando la brevedad de la entrega siempre y cuando sea funcional. Serán las siguientes:
+- Fin de semana: 10 puntos.
+- Lunes: 8 puntos.
+- Martes: 7 puntos.
+- Miercoles: 5 puntos.
+- Jueves: 4,5 puntos.
+- Viernes: 3 puntos.
+
+Formato:
+El formato de entrega consta de una carpeta comprimida con todo el contenido del proyecto con el formato "Apellido1_Apellido2_Nombre". 
+
+Penalizaciones:
+- Entrega sin comprimir: -1 punto al máximo posible.
+- Entrega con formato de carpeta incorrecto: -0,75 puntos al máximo posible.

@@ -1,0 +1,8 @@
+/* Elemento css para poder reducir el ancho de un elemento html al 17% del ancho de su contenedor*/
+.w-17 {
+    width: 17%!important;
+}
+/* Elemento css para poder reducir el ancho de un elemento html al 30% del ancho de su contenedor*/
+.w-30 {
+    width: 30%!important;
+}

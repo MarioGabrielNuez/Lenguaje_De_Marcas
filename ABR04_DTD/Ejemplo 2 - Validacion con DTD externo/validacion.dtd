@@ -1,0 +1,10 @@
+<!ELEMENT BDusuarios (usuario)+>
+<!ELEMENT usuario (nombre, email, fechaNac)>
+<!ATTLIST usuario
+    clave CDATA #REQUIRED
+    dni CDATA #REQUIRED
+>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT fechaNac EMPTY>
+<!ENTITY fecha "22-04-2022">

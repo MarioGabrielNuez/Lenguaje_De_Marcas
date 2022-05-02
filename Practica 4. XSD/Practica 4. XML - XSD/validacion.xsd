@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ifp">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="autor">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="apellidos" type="xs:string"/>
+                            <xs:element ref="nombre"></xs:element>
+                            <xs:element ref="correo"></xs:element>
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="modulos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="curso" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="modulo" minOccurs="1" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="id" type="id_modulo"/>
+                                                <xs:attribute name="nombre" type="xs:string" use="required"/>
+                                                <xs:attribute name="profesor" type="xs:string" use="required"/>
+                                                <xs:attribute name="tecnologias" type="xs:string" use="optional"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="nombre" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="ciclo" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="profesores">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="profesor" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="nombre"></xs:element>
+                                        <xs:element ref="correo"></xs:element>
+                                        <xs:element name="materia" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="id_profesor"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- elementos Generales / Repetidos-->
+    <xs:element name="nombre" type="xs:string"/>
+    <xs:element name="correo" type="email"/>
+
+    <!-- Tipos de datos -->
+    <xs:simpleType name="id_modulo">
+        <xs:restriction base="xs:integer" >
+            <xs:minInclusive value="1" />
+            <xs:maxExclusive value="12" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="id_profesor">
+        <xs:restriction base="xs:integer" >
+            <xs:minInclusive value="1" />
+            <xs:maxExclusive value="12" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="email">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

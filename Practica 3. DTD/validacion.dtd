@@ -1,0 +1,56 @@
+<!-- ELEMENTOS, ETIQUETAS -->
+<!ELEMENT ifp (autor, modulos, profesores)>
+<!ELEMENT autor (nombre, apellidos, correo)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT modulos (curso+)>
+<!ELEMENT curso (modulo+)>
+<!ELEMENT modulo EMPTY>
+<!ELEMENT profesores (profesor+)>
+<!ELEMENT profesor (nombre, correo*, materia+)>
+<!-- <!ELEMENT nombre (#PCDATA)> el elemento Nombre ya existe EN AUTOR, solo dejo el del principio y lo añado como subetiqueta a profesor además de autor -->
+<!-- <!ELEMENT correo (#PCDATA)> el elemento Correo ya existe EN AUTOR, solo dejo el del principio y lo añado como subetiqueta a profesor además de autor -->
+<!ELEMENT materia (#PCDATA)>
+
+<!-- ATRIBUTOS DE LAS ETIQUETAS-->
+<!ATTLIST modulos 
+    ciclo CDATA #REQUIRED
+>
+<!ATTLIST curso 
+    nombre CDATA #REQUIRED
+>
+<!ATTLIST modulo 
+    id CDATA #REQUIRED
+    nombre CDATA #REQUIRED
+    profesor CDATA #REQUIRED
+    tecnologias CDATA #REQUIRED
+>
+<!ATTLIST profesor 
+    id CDATA #REQUIRED
+>
+
+<!-- ENTIDADES -->
+<!ENTITY IFP "@ifp.es">
+
+<!-- Nombres de los Profesores-->
+<!ENTITY NAZA "Nazaret de Castro">
+<!ENTITY PACO "Francisco Aliseda Polanco">
+<!ENTITY SERGIO "Sergio Fontan Llamas">
+
+<!-- Nombres de los Módulos-->
+<!ENTITY BDD "Bases de datos (BDD)">
+<!ENTITY EED "Entornos de desarrollo (EED)">
+<!ENTITY FOL "Formación y orientación laboral (FOL)">
+<!ENTITY LLMSSGI "Lenguajes de marcas y sistemas de gestión de información (LLMSSGI)">
+<!ENTITY PROG "Programación (P)">
+<!ENTITY SSI "Sistemas Informaticos (SSI)">
+<!ENTITY AC "Acceso a datos (AC)">
+<!ENTITY DI "Desarrollo de interfaces (DI)">
+<!ENTITY EIE "Empresa e iniciativa emprendedora (EIE)">
+<!ENTITY ING "Inglés (I)">
+<!ENTITY PSP "Programación de servicios y procesos (PSP)">
+<!ENTITY PMDM "Programación multimedia y dispositivos móviles (PMDM)">
+<!ENTITY SGE "Sistemas de gestión empresarial (SGE)">
+<!ENTITY TFG "Proyecto de desarrollo de aplicaciones multiplataforma (TFG-PDAM)">
+<!ENTITY FCT "Formación en centros de trabajo (FCT)">

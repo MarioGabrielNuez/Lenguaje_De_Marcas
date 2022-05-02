@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ifp xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="./validacion.xsd">
+    <autor>
+        <nombre>Mario Gabriel</nombre>
+        <apellidos>Núñez Alcázar de Velasco</apellidos>
+        <correo>ifpmarionunezinfor@gmail.com</correo>
+    </autor>
+    <modulos ciclo="Desarrollo de aplicaciones multiplataforma (DAM)">
+        <curso nombre="primero">
+            <modulo id="1" nombre="Bases de datos (BDD)" profesor="Bases Francisco Aliseda Polancode datos (BDD)" tecnologias="Lenguajes SQL;Bases de datos objeto/relacionales;PHP"/>
+            <modulo id="2" nombre="Entornos de desarrollo (EED)" profesor="Sergio Fontan Llamas" tecnologias="Metodología de desarrollo;Gestion de proyectos;Gestion del Software;Desarrollo de Software;Diseño de Software;Creación de doucmentación"/>
+            <modulo id="3" nombre="Formación y orientación laboral (FOL)" profesor="Nazaret de Castro" tecnologias="Inciciacion al mundo laboral;Derechos y obligaciones de los trabajosdes;Prevencion de riesgos laborales;Gestión de los trabajadores en una empresa;Administracion en general"/>
+            <modulo id="4" nombre="Lenguajes de marcas y sistemas de gestión de información (LLMSSGI)" profesor="Sergio Fontan Llamas" tecnologias="HTML;Java Script (JS);XML;Modelo de objetos del documetno (DOM);Frameworks y librerias de programacion WEB;Sistemas de gestion de informacion Empresarial;Programacion WEB"/>
+            <modulo id="5" nombre="Programación (P)" profesor="Sergio Fontan Llamas" tecnologias="Programación estructurada;Diseño modular;Gestión de ficheros;Programacion orientada a objetos (POO);Conexión y manipulación de BDD con Lenguaje Estructurado;Programación adaptativa;Uso de API, Frameworks y librerias externas;Uso de la documentación"/>
+            <modulo id="6" nombre="Sistemas Informaticos (SSI)" profesor="Sergio Fontan Llamas" tecnologias="Instalación, configuración y explotación de los SSI;Gestión de la información y de recursos en una red;Implantación de software específico"/>
+        </curso>
+        <curso nombre="segundo">
+            <modulo id="1" nombre="Acceso a datos (AC)" profesor="Bases Francisco Aliseda Polancode datos (BDD)" tecnologias="Persistencia en ficheros;Persistencia en BDR-BDOR-BDOO;Persistencia en BD nativas XML;Componentes de acceso a datos"/>
+            <modulo id="2" nombre="Desarrollo de interfaces (DI)" profesor="Sergio Fontan Llamas" tecnologias="Diseño e implementación de interfaces;Preparación y distribución de aplicaciones"/>
+            <modulo id="3" nombre="Empresa e iniciativa emprendedora (EIE)" profesor="Nazaret de Castro" tecnologias="Gestión y administración de Empresas;Creación de Empresas;Gestión Administrativa como Autónomo;Iniciativa emprendedora"/>
+            <modulo id="4" nombre="Inglés (I)" profesor="Bases Francisco Aliseda Polancode datos (BDD)" tecnologias="Inglés técnico para grado superior"/>
+            <modulo id="5" nombre="Programación de servicios y procesos (PSP)" profesor="Bases Francisco Aliseda Polancode datos (BDD)" tecnologias="Seguridad y criptografía;Procesos e hilos;Zócalos y servicios"/>
+            <modulo id="6" nombre="Programación multimedia y dispositivos móviles (PMDM)" profesor="Sergio Fontan Llamas" tecnologias="Desarrollo de aplicaciones para dispositivos móviles;Programación multimedia;Desarrollo de juegos para dispositivos móviles"/>
+            <modulo id="7" nombre="Sistemas de gestión empresarial (SGE)" profesor="Sergio Fontan Llamas" tecnologias="Sistemas ERP-CRM. Implantación;Sistemas ERP-CRM. Explotación y adecuación"/>
+            <modulo id="8" nombre="Proyecto de desarrollo de aplicaciones multiplataforma (TFG-PDAM)" profesor="Sergio Fontan Llamas" tecnologias="Trabajo de fin de grado"/>
+            <modulo id="9" nombre="Formación en centros de trabajo (FCT)" profesor="Bases Francisco Aliseda Polancode datos (BDD)" tecnologias="Prácticas del modulo"/>
+        </curso>
+    </modulos>
+    <profesores>
+        <profesor id="1">
+            <nombre>Bases Francisco Aliseda Polancode datos (BDD)</nombre>
+            <correo>faliseda@ifp.es</correo>
+            <materia>Bases de datos (BDD)</materia>
+            <materia>Acceso a datos (AC)</materia>
+            <materia>Inglés (I)</materia>
+            <materia>Programación de servicios y procesos (PSP)</materia>
+            <materia>Formación en centros de trabajo (FCT)</materia>
+        </profesor>
+        <profesor id="2">
+            <nombre>Sergio Fontan Llamas</nombre>
+            <correo>sfontan@ifp.es</correo>
+            <materia>Entornos de desarrollo (EED)</materia>
+            <materia>Lenguajes de marcas y sistemas de gestión de información (LLMSSGI)</materia>
+            <materia>Programación (P)</materia>
+            <materia>Sistemas Informaticos (SSI)</materia>
+            <materia>Desarrollo de interfaces (DI)</materia>
+            <materia>Programación multimedia y dispositivos móviles (PMDM)</materia>
+            <materia>Sistemas de gestión empresarial (SGE)</materia>
+            <materia>Proyecto de desarrollo de aplicaciones multiplataforma (TFG-PDAM)</materia>
+        </profesor>
+        <profesor id="3">
+            <nombre>Nazaret de Castro</nombre>
+            <correo>ndecastro@ifp.es</correo>
+            <materia>Formación y orientación laboral (FOL)</materia>
+            <materia>Empresa e iniciativa emprendedora (EIE)</materia>
+        </profesor>
+    </profesores>
+</ifp>

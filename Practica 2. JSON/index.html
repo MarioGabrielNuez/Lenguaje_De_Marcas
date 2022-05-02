@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- Determina el tipo de lenguaje de etiquetas a utilizar -->
+<html lang="es"> <!-- Etiqueta de apertura de archivo HTML, lo iniciamos con lang="en"-->
+
+    <!-- Cabecera de la página, contiene datos sobre la página para que esta funcione correctamente, esta no se visualizara-->
+    <head>
+        <meta charset="UTF-8"> <!-- especificamos el tipo de codificación a usar en toda la página -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- especificamos los navegadores compatibles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- indicamos que la página tendra la resolución de la pantalla en la que se está visualizando en el momento -->
+        <meta name="author" content="Mario Gabriel Núñez Alcázar de Velasco"> <!-- Nombre del autor de la página -->
+        <title>Práctica 2. JSON</title> <!-- Título de la página (se visualizara en la pestaña del navegador) -->
+        <link rel="shortcut icon" type="image/icon" href="res/img/ico/logo.ico"> <!-- Cargamos el icono de la página -->
+        <link rel="stylesheet" href="./css/style.css">  <!-- mi CSS -->
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <!-- Fin BootStrap -->
+        <script src="./js/app.js"></script>
+    </head>
+
+    <body>
+        <!-- Cabecera -->
+        <div class="container-fluid bg-primary bg-opacity-25 z-index-0">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom border-bottom-0">
+                <a href="/" class="w-3 d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    Empresa
+                </a>
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#sn" class="bg-primary bg-opacity-75 nav-link px-2 link-light">Sobre Nosotros</a></li>
+                    <li><a href="#nt" class="bg-primary bg-opacity-75 nav-link px-2 link-light">Nuestros Trabajadores</a></li>
+                    <li><a href="#no" class="bg-primary bg-opacity-75 nav-link px-2 link-light">Nuestras Oficinas</a></li>
+                </ul>
+            </header>
+        </div>
+        <article>
+            <section class="container">
+                <div class="row">
+                    <div class="col col-sm-12 col-md-12">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text text-center bg-primary bg-opacity-25 ps-5 pe-5 pb-2 pt-2">
+                                <span id="sn" class="card-title"><h3>Sobre Nosotros</h3></span><br>
+                                <p id="p">
+                                    <!-- Aqui se mostrara la informacion de la empresa ubicada en el fichero descripción.txt-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><br>
+            <section class="container">
+                <div class="row">
+                    <div class="col col-sm-12 col-md-12">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text text-center bg-primary bg-opacity-25 pt-2">
+                                <span id="nt" class="card-title"><h3>Nuestros Trabajadores</h3></span><br>
+                                <div class="container m-2 mb-5">
+                                    <div id="Employees_Cards" class="row row-cols-4 justify-content-center">
+                                        <!-- Aquí se mostrara la informacion de los trabajadores de la empresa ubicada en el fichero JSON -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><br>
+            <section class="container">
+                <div class="row">
+                    <div class="col col-sm-12 col-md-12">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text text-center bg-primary bg-opacity-25 pt-2">
+                                <span id="no" class="card-title"><h3>Nuestras Oficinas</h3></span><br>
+                                <div class="container m-2 mb-5">
+                                    <div id="Oficinas_Cards" class="row row-cols-4 justify-content-center">
+                                        <!-- Aquí se mostrara la informacion de las Oficinas de la empresa ubicada en el fichero JSON -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!-- Footer -->
+        <div class="bg-hf container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+                <p class="col-md-4 mb-0">Empresa</p>
+                <ul class="nav col-md-4 justify-content-end">
+                    <li><a href="#sn" class="ms-2">Sobre Nosotros</a></li>
+                    <li><a href="#nt" class="ms-2">Nuestros Trabajadores</a></li>
+                    <li><a href="#no" class="ms-2">Nuestras Oficinas</a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>

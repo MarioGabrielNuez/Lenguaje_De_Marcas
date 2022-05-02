@@ -1,0 +1,44 @@
+En esta practica el objetivo es realizar un diseño de una pagina web con bootstrap o materialize que contenga datos variables sacados de un fichero JSON.
+Se simula una pagia web de una empresa con contenido sobre sus trabajadores y descripcion, cada uno obtenido desde un fichero distinto.
+
+Se facilita el siguiente contenido:
+
+- img: contiene las fotos de los avatares de los trabajadores de la empresa.
+- css: carpeta vacía de contenido y de uso opcional.
+- js: carpeta vacía de contenido donde deben ir todos los archivos con extensión .js que sean utilizados en la práctica. Será obligatorio la creacion 
+de scripts en javascript.
+- json: contiene el fichero trabajadores.json, elemento del que se deben obtener los datos.
+- txt: contiene el archivo descripcion.txt de contenido vacío a rellenar por el alumno. Este archivo pertenece a la seccion de descripcion de la empresa o "sobre nosotros".
+
+El diseño debe contener:
+1. Descripcion de la empresa o "sobre nosotros" correspondiente al txt a rellenar por el alumno.
+2. Los trabajadores en cards de Bootstrap con la imagen de avatar y sus correspondientes datos.
+3. Ubicacion de las oficinas de la empresa con formato libre.
+
+
+Se valora:
+- Diseño
+- Cantidad de elementos.
+- Calidad de elementos.
+- Optimizacion del codigo.
+- Calidad del script.
+- Personalización de elementos
+
+Entrega:
+La entrega estará abierta durante 10 dias, concretamente hasta el domingo 10 de abril a las 23:59. Después NO se recogen ejercicios.
+
+Calificaciones:
+Las calificaciones máximas posibles variarán en función de la fecha de entrega, premiando la brevedad de la entrega siempre y cuando sea funcional. Serán las siguientes:
+- Fin de semana: 10 puntos.
+- Lunes: 8 puntos.
+- Martes: 7 puntos.
+- Miercoles: 5 puntos.
+- Jueves: 4,5 puntos.
+- Viernes y demas dias: 3 puntos.
+
+Formato:
+El formato de entrega consta de una carpeta comprimida con todo el contenido del proyecto con el formato "Apellido1_Apellido2_Nombre". 
+
+Penalizaciones:
+- Entrega sin comprimir: -1 punto al máximo posible.
+- Entrega con formato de carpeta incorrecto: -0,75 puntos al máximo posible.

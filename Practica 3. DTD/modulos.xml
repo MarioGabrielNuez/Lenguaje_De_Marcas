@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE ifp SYSTEM "./validacion.dtd">
+<ifp>
+    <autor>
+        <nombre>Mario Gabriel</nombre>
+        <apellidos>Núñez Alcázar de Velasco</apellidos>
+        <correo>ifpmarionunezinfor@gmail.com</correo>
+    </autor>
+    <modulos ciclo="Desarrollo de aplicaciones multiplataforma (DAM)">
+        <curso nombre="primero">
+            <modulo id="1" nombre="&BDD;" profesor="&PACO;" tecnologias="Lenguajes SQL;Bases de datos objeto/relacionales;PHP"/>
+            <modulo id="2" nombre="&EED;" profesor="&SERGIO;" tecnologias="Metodología de desarrollo;Gestion de proyectos;Gestion del Software;Desarrollo de Software;Diseño de Software;Creación de doucmentación"/>
+            <modulo id="3" nombre="&FOL;" profesor="&NAZA;" tecnologias="Inciciacion al mundo laboral;Derechos y obligaciones de los trabajosdes;Prevencion de riesgos laborales;Gestión de los trabajadores en una empresa;Administracion en general"/>
+            <modulo id="4" nombre="&LLMSSGI;" profesor="&SERGIO;" tecnologias="HTML;Java Script (JS);XML;Modelo de objetos del documetno (DOM);Frameworks y librerias de programacion WEB;Sistemas de gestion de informacion Empresarial;Programacion WEB"/>
+            <modulo id="5" nombre="&PROG;" profesor="&SERGIO;" tecnologias="Programación estructurada;Diseño modular;Gestión de ficheros;Programacion orientada a objetos (POO);Conexión y manipulación de BDD con Lenguaje Estructurado;Programación adaptativa;Uso de API, Frameworks y librerias externas;Uso de la documentación"/>
+            <modulo id="6" nombre="&SSI;" profesor="&SERGIO;" tecnologias="Instalación, configuración y explotación de los SSI;Gestión de la información y de recursos en una red;Implantación de software específico"/>
+        </curso>
+        <curso nombre="segundo">
+            <modulo id="1" nombre="&AC;" profesor="&PACO;" tecnologias="Persistencia en ficheros;Persistencia en BDR-BDOR-BDOO;Persistencia en BD nativas XML;Componentes de acceso a datos"/>
+            <modulo id="1" nombre="&DI;" profesor="&SERGIO;" tecnologias="Diseño e implementación de interfaces;Preparación y distribución de aplicaciones"/>
+            <modulo id="1" nombre="&EIE;" profesor="&NAZA;" tecnologias="Gestión y administración de Empresas;Creación de Empresas;Gestión Administrativa como Autónomo;Iniciativa emprendedora"/>
+            <modulo id="1" nombre="&ING;" profesor="&PACO;" tecnologias="Inglés técnico para grado superior"/>
+            <modulo id="1" nombre="&PSP;" profesor="&PACO;" tecnologias="Seguridad y criptografía;Procesos e hilos;Zócalos y servicios"/>
+            <modulo id="1" nombre="&PMDM;" profesor="&SERGIO;" tecnologias="Desarrollo de aplicaciones para dispositivos móviles;Programación multimedia;Desarrollo de juegos para dispositivos móviles"/>
+            <modulo id="1" nombre="&SGE;" profesor="&SERGIO;" tecnologias="Sistemas ERP-CRM. Implantación;Sistemas ERP-CRM. Explotación y adecuación"/>
+            <modulo id="1" nombre="&TFG;" profesor="&SERGIO;" tecnologias="Trabajo de fin de grado"/>
+            <modulo id="1" nombre="&FCT;" profesor="&PACO;" tecnologias="Prácticas del modulo"/>
+        </curso>
+    </modulos>
+    <profesores>
+        <profesor id="1">
+            <nombre>&PACO;</nombre>
+            <correo>faliseda&IFP;</correo>
+            <materia>&BDD;</materia>
+            <materia>&AC;</materia>
+            <materia>&ING;</materia>
+            <materia>&PSP;</materia>
+            <materia>&FCT;</materia>
+        </profesor>
+        <profesor id="2">
+            <nombre>&SERGIO;</nombre>
+            <correo>sfontan&IFP;</correo>
+            <materia>&EED;</materia>
+            <materia>&LLMSSGI;</materia>
+            <materia>&PROG;</materia>
+            <materia>&SSI;</materia>
+            <materia>&DI;</materia>
+            <materia>&PMDM;</materia>
+            <materia>&SGE;</materia>
+            <materia>&TFG;</materia>
+        </profesor>
+        <profesor id="3">
+            <nombre>&NAZA;</nombre>
+            <correo>ndecastro&IFP;</correo>
+            <materia>&FOL;</materia>
+            <materia>&EIE;</materia>
+        </profesor>
+    </profesores>
+</ifp>
